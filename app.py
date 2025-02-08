@@ -81,6 +81,40 @@ def main():
         user_input(user_question)
     
     with st.sidebar:
+        st.image("./profilepic.jpeg", width=170)
+        st.markdown("Developed by ***Basudev Das***")
+        st.markdown(
+        """
+        <style>
+        .social-links {
+            display: flex;
+            gap: 10px;
+        }
+        .social-links a {
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .social-links img {
+            width: 15px;
+            height: 15px;
+            vertical-align: middle;
+        }
+        </style>
+
+        <div class="social-links">
+            <a href="https://github.com/basudev77" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"> GitHub
+            </a> 
+            <a href="https://www.linkedin.com/in/basudev-das-6568b0274/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png"> LinkedIn
+            </a> 
+            <a href="https://basudevdas.netlify.app/" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=87836&format=png&color=000000"> Portfolio
+            </a>
+        </div>
+        """,
+        unsafe_allow_html=True
+        )
         st.title("Menu")
         pdf_docs = st.file_uploader("Upload your PDF files", accept_multiple_files=True)
         
