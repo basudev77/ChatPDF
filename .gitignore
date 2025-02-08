@@ -1,0 +1,35 @@
+# Ignore virtual environments
+venv/
+.env
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore environment variables and secrets
+.env
+*.env
+
+# Ignore dependency files (can be regenerated from requirements.txt)
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Ignore Jupyter Notebook checkpoints (if using notebooks)
+.ipynb_checkpoints/
+
+# Ignore logs and temporary files
+*.log
+*.out
+*.err
+*.pid
+*.seed
+*.manifest
+
+# Ignore FAISS index files (large binary files)
+faiss.index
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
